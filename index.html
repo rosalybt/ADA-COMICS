@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADA Comics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css>
+</head>
+
+<body>
+
+    <header>
+        <div class="barra">
+            <div class="contenedor-marca">
+                <h1 class="nombre-marca">ADA COMICS</h1>
+            </div>
+        </div>
+    </header>
+    <div class="portada">
+
+    </div>
+
+    <main>
+        <form action="">
+            <input type="text" name="filtro" id="filtro-texto">
+
+            <label for="tipo">TIPO
+                <select name="tipo" id="tipo">
+                    <option value="comics">Comics</option>
+                    <option value="personajes">Personajes</option>
+                </select>
+            </label>
+
+            <label for="orden">ORDEN
+                <select name="orden" id="orden">
+                    <option value="ascendente">A-Z</option>
+                    <option value="descendente">Z-A</option>
+                    <option value="mas-nuevo">Mas nuevo</option>
+                    <option value="mas-viejo">Mas viejo</option>
+                </select>
+            </label>
+
+            <button class="btn-buscar">BUSCAR</button>
+        </form>
+
+        <div class="show-results">
+            <h3>RESULTADOS</h3>
+            <spa class="resultados">0000</span> <span>RESULTADOS</span>
+        </div>
+        <div class="contenedor-cards">
+
+        </div>
+
+        <div class="pages">
+            <button><i class="fas fa-angle-double-left"></i></button>
+            <button><i class="fas fa-angle-left"></i></button>
+            <button><i class="fas fa-angle-right"></i></button>
+            <button><i class="fas fa-angle-double-right"></i></button>
+        </div>
+    </main>
+    <footer>
+        <p>Hecho con pasión ❣️ and SASS por Rosaly Balbuena</p>
+    </footer>
+</body>
+
+</html>
