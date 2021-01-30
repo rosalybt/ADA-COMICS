@@ -23,6 +23,7 @@ $tamanio-pequenio: small;
   background-color: $colorFondo;
   color: $color;
   margin: $margen;
+  cursor: pointer;
   @include texto($color, large, lighter);
 }
 
@@ -37,8 +38,16 @@ $tamanio-pequenio: small;
   font-family: $tipografia-general;
 }
 
+.show-results {
+  margin-top: 4rem;
+  @include texto($color-secundario, 20px, bold);
+  span {
+    @include texto($color-deshabilitado, small, bold);
+  }
+}
 .pages {
   @extend %centrar;
+  margin: 3rem 0 3rem 0;
   button {
     @include button($color-secundario, $color-principal, 45px, 45px, 5px);
     @include texto(_, large, _);
@@ -94,7 +103,7 @@ main {
   padding: 50px 60px;
 
   .contenedor-cards {
-    margin: 4rem 0 4rem 0;
+    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
