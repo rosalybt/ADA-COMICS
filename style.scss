@@ -9,6 +9,10 @@ $tipografia-general: "Roboto", cursive;
 $tamanio-grande: x-large;
 $tamanio-pequenio: small;
 
+%espaciado {
+  padding: 3rem 2rem;
+}
+
 @mixin texto($color: #000, $tamanioFuente: normal, $grosor: bold) {
   color: $color;
   font-weight: $grosor;
@@ -31,6 +35,7 @@ $tamanio-pequenio: small;
   display: flex;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
 * {
@@ -61,6 +66,17 @@ footer {
   @extend %centrar;
   background-color: $color-secundario;
   color: $color-principal;
+  height: 25vh;
+  @include texto(_, large, lighter);
+
+  a {
+    &:visited,
+    &:link,
+    &:active {
+      text-decoration: none;
+      color: $color-principal;
+    }
+  }
 }
 
 .barra {

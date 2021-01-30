@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
 * {
@@ -48,6 +49,14 @@
 
 footer {
   background-color: black;
+  color: white;
+  height: 25vh;
+  color: _;
+  font-weight: lighter;
+  font-size: large;
+}
+footer a:visited, footer a:link, footer a:active {
+  text-decoration: none;
   color: white;
 }
 
