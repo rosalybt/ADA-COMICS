@@ -1,24 +1,52 @@
-fetch('https://rickandmortyapi.com/api/character')
-    .then((data) => {
-        return data.json();
-    })
-    .then((info) => {
-        console.log(info);
-        const resultados = document.querySelector('.resultados')
-        const contenedorCards = document.querySelector('.contenedor-cards')
-        contenedorCards.innerHTML = ''
-        resultados.innerHTML = ''
-        resultados.innerHTML = info.info.count
-        info.results.map((personaje) => {
-            contenedorCards.innerHTML += `
+let currentPage = 1
+
+
+
+
+const createCard = (cover, HTML) => {
+
+    cover.forEach((info) => {
+        HTML.innerHTML += `
         <article class="card">
             <div class="imagen">
-                <img src="${personaje.image}" alt="">
+                <img src="${info.image}" alt="">
             </div>
             <div class="info">
-                <h3 class="nombre">${personaje.name}</h3>
+                <h3 class="nombre">${info.name}</h3>
             </div>
         </article>
         `
-        })
     });
+
+};
+
+
+
+const getInfo = (url) => {
+    fetch(url)
+        .then((data) => {
+            return data.json();
+        })
+        .then((cover) => {
+            console.log(cover.results)
+            const results = document.querySelector('.resultados')
+            const containerCards = document.querySelector('.contenedor-cards')
+            containerCards.innerHTML = ''
+            results.innerHTML = ''
+            results.innerHTML = cover.info.count
+            createCard(cover.results, containerCards);
+
+        })
+};
+
+getInfo('https://rickandmortyapi.com/api/character');
+
+
+const nextPage = document.querySelector('#btn-next')
+
+nextPage.onclick = (e) => {
+    e.preventDefault();
+    currentPage += 1
+    getInfo(`https://rickandmortyapi.com/api/character?page=${currentPage}`)
+
+}
