@@ -1,14 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 $color-principal: white;
 $color-secundario: black;
 $color-terceario: #e50000;
+$color-deshabilitado: #808080;
 $tipografia-marca: "Bangers", cursive;
-$tamanio-fuente-grande: 45px;
+$tipografia-general: "Roboto", cursive;
+$tamanio-grande: x-large;
+$tamanio-pequenio: small;
+
+@mixin texto($color: #000, $tamanioFuente: normal, $grosor: bold) {
+  color: $color;
+  font-weight: $grosor;
+  font-size: $tamanioFuente;
+}
+
+@mixin button($colorFondo, $color) {
+  border: none;
+  padding: 5px;
+  background-color: $colorFondo;
+  color: $color;
+  @include texto($color, normal, bold);
+}
 
 %centrar {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: $tipografia-general;
 }
 
 .pages {
@@ -76,14 +99,68 @@ main {
     margin: 0;
   }
   .imagen {
-    // overflow: hidden;
+    width: 100%;
+    height: 350px;
     img {
-      max-width: 100%;
-      width: 225px;
-      height: 350px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
   .info {
-    text-align: center;
+    @extend %centrar;
+  }
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+
+  .busqueda {
+    width: 45%;
+
+    position: relative;
+    .filtro-texto {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      #filtro-texto {
+        border: none;
+        border-bottom: 1px solid $color-secundario;
+        margin-top: 15px;
+        padding: 5px 30px 5px 30px;
+        font-size: x-large;
+      }
+    }
+    display: flex;
+    justify-content: space-between;
+
+    .fas.fa-search {
+      position: absolute;
+      margin: 5px;
+      top: 50px;
+      left: 0;
+    }
+  }
+
+  .filtros {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    @include texto($color-deshabilitado, normal bold);
+    button {
+      @include button($color-secundario, $color-principal);
+    }
+    .select {
+      @include texto(_, large, bold);
+      border: none;
+      margin-left: 5px;
+    }
+  }
+
+  h2 {
+    margin: 0;
   }
 }
