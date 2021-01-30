@@ -1,8 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
-footer, .pages {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.card .info, footer, .pages {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", cursive;
+}
+
+.pages button {
+  border: none;
+  padding: 5px;
+  width: 45px;
+  height: 45px;
+  background-color: black;
+  color: white;
+  margin: 5px;
+  color: white;
+  font-weight: lighter;
+  font-size: large;
+  color: _;
+  font-weight: _;
+  font-size: large;
+}
+.pages button:hover {
+  background-color: #e50000;
 }
 
 footer {
@@ -61,13 +86,73 @@ main .contenedor-cards {
 .card h3 {
   margin: 0;
 }
-.card .imagen img {
-  max-width: 100%;
-  width: 225px;
+.card .imagen {
+  width: 100%;
   height: 350px;
 }
-.card .info {
-  text-align: center;
+.card .imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+}
+form .busqueda {
+  width: 45%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+form .busqueda .filtro-texto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+form .busqueda .filtro-texto #filtro-texto {
+  border: none;
+  border-bottom: 1px solid black;
+  margin-top: 15px;
+  padding: 5px 30px 5px 30px;
+  font-size: x-large;
+}
+form .busqueda .fas.fa-search {
+  position: absolute;
+  margin: 5px;
+  top: 50px;
+  left: 0;
+}
+form .filtros {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  color: #808080;
+  font-weight: bold;
+  font-size: normal;
+}
+form .filtros button {
+  border: none;
+  padding: 5px;
+  width: 100px;
+  height: 35px;
+  background-color: black;
+  color: white;
+  margin: 0;
+  color: white;
+  font-weight: lighter;
+  font-size: large;
+}
+form .filtros .select {
+  color: _;
+  font-weight: bold;
+  font-size: large;
+  border: none;
+  margin-left: 5px;
+}
+form h2 {
+  margin: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
