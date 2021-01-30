@@ -79,7 +79,7 @@ footer a:visited, footer a:link, footer a:active {
 
 .portada {
   position: relative;
-  background-image: url(portada.jpg);
+  background-image: url(imagenes/portada.jpg);
   background-size: cover;
   padding: 30vh 0;
 }
