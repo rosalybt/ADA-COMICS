@@ -23,30 +23,33 @@ const createCard = (cover, HTML) => {
 
 
 const getInfo = (url) => {
-    fetch(url)
-        .then((data) => {
-            return data.json();
-        })
-        .then((cover) => {
-            console.log(cover.results)
-            const results = document.querySelector('.resultados')
-            const containerCards = document.querySelector('.contenedor-cards')
-            containerCards.innerHTML = ''
-            results.innerHTML = ''
-            results.innerHTML = cover.info.count
-            createCard(cover.results, containerCards);
-
-        })
+    fetch(url).then((data) => {
+        return data.json();
+    }).then((cover) => {
+        console.log(cover.results)
+        const results = document.querySelector('.resultados')
+        const containerCards = document.querySelector('.contenedor-cards')
+        containerCards.innerHTML = ''
+        results.innerHTML = ''
+        results.innerHTML = cover.info.count
+        createCard(cover.results, containerCards);
+    })
 };
 
 getInfo('https://rickandmortyapi.com/api/character');
 
 
 const nextPage = document.querySelector('#btn-next')
+const previousPage = document.querySelector('#btn-previous')
 
-nextPage.onclick = (e) => {
-    e.preventDefault();
+nextPage.onclick = () => {
     currentPage += 1
     getInfo(`https://rickandmortyapi.com/api/character?page=${currentPage}`)
 
 }
+
+previousPage.onclick = () => {
+    currentPage -= 1
+    if (currentPage) getInfo(`https://rickandmortyapi.com/api/character?page=${currentPage}`)
+}
+
