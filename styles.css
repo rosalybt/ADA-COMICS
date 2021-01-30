@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+footer, .pages {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 footer {
   background-color: black;
   color: white;
@@ -10,7 +16,7 @@ footer {
   justify-content: center;
 }
 .barra .contenedor-marca {
-  background-color: red;
+  background-color: #e50000;
 }
 .barra .contenedor-marca .nombre-marca {
   font-family: "Bangers", cursive;
@@ -40,6 +46,28 @@ footer {
 
 main {
   padding: 50px 60px;
+}
+main .contenedor-cards {
+  margin: 4rem 0 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 230px;
+  margin-bottom: 30px;
+}
+.card h3 {
+  margin: 0;
+}
+.card .imagen img {
+  max-width: 100%;
+  width: 225px;
+  height: 350px;
+}
+.card .info {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
