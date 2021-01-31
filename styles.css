@@ -12,6 +12,13 @@
   font-family: "Roboto", cursive;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 80ddc4026d14a48aa7cf0efa7e4306e17e546a7c
 .show-results {
   margin-top: 4rem;
   color: black;
@@ -27,6 +34,10 @@
 .pages {
   margin: 3rem 0 3rem 0;
 }
+<<<<<<< HEAD
+>>>>>>> 34578e0 (style: estilizado seccion resultados)
+=======
+>>>>>>> 80ddc4026d14a48aa7cf0efa7e4306e17e546a7c
 .pages button {
   border: none;
   padding: 5px;
@@ -47,6 +58,10 @@
   background-color: #e50000;
 }
 
+<<<<<<< HEAD
+>>>>>>> 26d0d2f (style: button format)
+=======
+>>>>>>> 80ddc4026d14a48aa7cf0efa7e4306e17e546a7c
 footer {
   background-color: black;
   color: white;
@@ -120,6 +135,13 @@ main .contenedor-cards {
   height: 100%;
   object-fit: cover;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 26d0d2f (style: button format)
+=======
+>>>>>>> 80ddc4026d14a48aa7cf0efa7e4306e17e546a7c
 form {
   display: flex;
   justify-content: space-between;
@@ -155,11 +177,34 @@ form .filtros {
   align-items: flex-end;
   color: #808080;
   font-weight: bold;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  font-size: normal bold;
+=======
   font-size: normal;
+>>>>>>> 26d0d2f (style: button format)
+=======
+  font-size: normal;
+>>>>>>> 80ddc4026d14a48aa7cf0efa7e4306e17e546a7c
 }
 form .filtros button {
   border: none;
   padding: 5px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  width: 100px;
+  height: 35px;
+>>>>>>> 80ddc4026d14a48aa7cf0efa7e4306e17e546a7c
+  background-color: black;
+  color: white;
+  margin: 0;
+  cursor: pointer;
+  color: white;
+<<<<<<< HEAD
+  font-weight: bold;
+  font-size: normal;
+=======
   width: 100px;
   height: 35px;
   background-color: black;
@@ -169,6 +214,11 @@ form .filtros button {
   color: white;
   font-weight: lighter;
   font-size: large;
+>>>>>>> 26d0d2f (style: button format)
+=======
+  font-weight: lighter;
+  font-size: large;
+>>>>>>> 80ddc4026d14a48aa7cf0efa7e4306e17e546a7c
 }
 form .filtros .select {
   color: _;
@@ -179,6 +229,16 @@ form .filtros .select {
 }
 form h2 {
   margin: 0;
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+.card .info {
+  text-align: center;
+
+=======
+>>>>>>> 26d0d2f (style: button format)
+=======
+>>>>>>> 80ddc4026d14a48aa7cf0efa7e4306e17e546a7c
 }
 
 /*# sourceMappingURL=styles.css.map */
