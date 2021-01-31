@@ -12,7 +12,25 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+.show-results {
+  margin-top: 4rem;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.show-results span {
+  color: #808080;
+  font-weight: bold;
+  font-size: small;
+}
+
+.pages {
+  margin: 3rem 0 3rem 0;
+}
+>>>>>>> 34578e0 (style: estilizado seccion resultados)
 .pages button {
   border: none;
   padding: 5px;
@@ -21,6 +39,7 @@
   background-color: black;
   color: white;
   margin: 5px;
+  cursor: pointer;
   color: white;
   font-weight: lighter;
   font-size: large;
@@ -76,7 +95,7 @@ main {
   padding: 50px 60px;
 }
 main .contenedor-cards {
-  margin: 4rem 0 4rem 0;
+  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -158,6 +177,7 @@ form .filtros button {
   background-color: black;
   color: white;
   margin: 0;
+  cursor: pointer;
   color: white;
   font-weight: lighter;
   font-size: large;
