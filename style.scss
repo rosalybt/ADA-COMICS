@@ -15,12 +15,15 @@ $tamanio-pequenio: small;
   font-size: $tamanioFuente;
 }
 
-@mixin button($colorFondo, $color) {
+@mixin button($colorFondo, $color, $ancho, $alto, $margen: 0) {
   border: none;
   padding: 5px;
+  width: $ancho;
+  height: $alto;
   background-color: $colorFondo;
   color: $color;
-  @include texto($color, normal, bold);
+  margin: $margen;
+  @include texto($color, large, lighter);
 }
 
 %centrar {
@@ -36,6 +39,13 @@ $tamanio-pequenio: small;
 
 .pages {
   @extend %centrar;
+  button {
+    @include button($color-secundario, $color-principal, 45px, 45px, 5px);
+    @include texto(_, large, _);
+    &:hover {
+      background-color: $color-terceario;
+    }
+  }
 }
 
 footer {
@@ -149,9 +159,9 @@ form {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    @include texto($color-deshabilitado, normal bold);
+    @include texto($color-deshabilitado, normal, bold);
     button {
-      @include button($color-secundario, $color-principal);
+      @include button($color-secundario, $color-principal, 100px, 35px);
     }
     .select {
       @include texto(_, large, bold);

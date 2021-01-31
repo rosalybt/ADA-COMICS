@@ -11,6 +11,28 @@
   font-family: "Roboto", cursive;
 }
 
+<<<<<<< HEAD
+=======
+.pages button {
+  border: none;
+  padding: 5px;
+  width: 45px;
+  height: 45px;
+  background-color: black;
+  color: white;
+  margin: 5px;
+  color: white;
+  font-weight: lighter;
+  font-size: large;
+  color: _;
+  font-weight: _;
+  font-size: large;
+}
+.pages button:hover {
+  background-color: #e50000;
+}
+
+>>>>>>> 26d0d2f (style: button format)
 footer {
   background-color: black;
   color: white;
@@ -76,7 +98,10 @@ main .contenedor-cards {
   height: 100%;
   object-fit: cover;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 26d0d2f (style: button format)
 form {
   display: flex;
   justify-content: space-between;
@@ -112,16 +137,31 @@ form .filtros {
   align-items: flex-end;
   color: #808080;
   font-weight: bold;
+<<<<<<< HEAD
   font-size: normal bold;
+=======
+  font-size: normal;
+>>>>>>> 26d0d2f (style: button format)
 }
 form .filtros button {
   border: none;
   padding: 5px;
+<<<<<<< HEAD
   background-color: black;
   color: white;
   color: white;
   font-weight: bold;
   font-size: normal;
+=======
+  width: 100px;
+  height: 35px;
+  background-color: black;
+  color: white;
+  margin: 0;
+  color: white;
+  font-weight: lighter;
+  font-size: large;
+>>>>>>> 26d0d2f (style: button format)
 }
 form .filtros .select {
   color: _;
@@ -132,10 +172,13 @@ form .filtros .select {
 }
 form h2 {
   margin: 0;
+<<<<<<< HEAD
 
 .card .info {
   text-align: center;
 
+=======
+>>>>>>> 26d0d2f (style: button format)
 }
 
 /*# sourceMappingURL=styles.css.map */
