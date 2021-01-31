@@ -12,6 +12,7 @@
   font-family: "Roboto", cursive;
 }
 
+<<<<<<< HEAD
 .show-results {
   margin-top: 4rem;
   color: black;
@@ -27,6 +28,10 @@
 .pages {
   margin: 3rem 0 3rem 0;
 }
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> e1d74ac (fix conglicts)
 .pages button {
   border: none;
   padding: 5px;
@@ -35,7 +40,10 @@
   background-color: black;
   color: white;
   margin: 5px;
+<<<<<<< HEAD
   cursor: pointer;
+=======
+>>>>>>> e1d74ac (fix conglicts)
   color: white;
   font-weight: lighter;
   font-size: large;
@@ -47,6 +55,10 @@
   background-color: #e50000;
 }
 
+<<<<<<< HEAD
+=======
+>>>>>>> 26d0d2f (style: button format)
+>>>>>>> e1d74ac (fix conglicts)
 footer {
   background-color: black;
   color: white;
@@ -120,6 +132,13 @@ main .contenedor-cards {
   height: 100%;
   object-fit: cover;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 26d0d2f (style: button format)
+>>>>>>> e1d74ac (fix conglicts)
 form {
   display: flex;
   justify-content: space-between;
@@ -155,20 +174,47 @@ form .filtros {
   align-items: flex-end;
   color: #808080;
   font-weight: bold;
+<<<<<<< HEAD
   font-size: normal;
+=======
+<<<<<<< HEAD
+  font-size: normal bold;
+=======
+  font-size: normal;
+>>>>>>> 26d0d2f (style: button format)
+>>>>>>> e1d74ac (fix conglicts)
 }
 form .filtros button {
   border: none;
   padding: 5px;
+<<<<<<< HEAD
   width: 100px;
   height: 35px;
+=======
+<<<<<<< HEAD
+>>>>>>> e1d74ac (fix conglicts)
   background-color: black;
   color: white;
   margin: 0;
   cursor: pointer;
   color: white;
+<<<<<<< HEAD
   font-weight: lighter;
   font-size: large;
+=======
+  font-weight: bold;
+  font-size: normal;
+=======
+  width: 100px;
+  height: 35px;
+  background-color: black;
+  color: white;
+  margin: 0;
+  color: white;
+  font-weight: lighter;
+  font-size: large;
+>>>>>>> 26d0d2f (style: button format)
+>>>>>>> e1d74ac (fix conglicts)
 }
 form .filtros .select {
   color: _;
@@ -179,6 +225,16 @@ form .filtros .select {
 }
 form h2 {
   margin: 0;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+.card .info {
+  text-align: center;
+
+=======
+>>>>>>> 26d0d2f (style: button format)
+>>>>>>> e1d74ac (fix conglicts)
 }
 
 /*# sourceMappingURL=styles.css.map */
