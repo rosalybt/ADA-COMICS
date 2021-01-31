@@ -179,12 +179,16 @@ form .filtros {
   align-items: flex-end;
   color: #808080;
   font-weight: bold;
-
   font-size: normal;
 }
 form .filtros button {
   border: none;
   padding: 5px;
+  background-color: black;
+  color: white;
+  margin: 0;
+  cursor: pointer;
+  color: white;
   width: 100px;
   height: 35px;
   background-color: black;
